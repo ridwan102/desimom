@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
+import { FaAlignRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
     //navbar toggle; adjust .nav-links in CSS (43:06 of video Resort React Tutorial)
-    // state={
-    //     isOpen:false
-    // }
-    // handleToggle = () =>{
-    //     this.setState({isOpen:!this.state.isOpen})
-    // }
+    state={
+        isOpen:false
+    }
+    handleToggle = () =>{
+        this.setState({isOpen:!this.state.isOpen})
+    }
     render() {
         return (
             <nav className='navbar'>
@@ -17,20 +18,32 @@ export default class Navbar extends Component {
                 https://www.iconfinder.com/icons/1243689/call_phone_icon
                 Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
-                <Link to='/'>
-                    <img src={logo} alt='logo' className='nav-brand'/>
-                </Link>
+                <div className='nav-center'>
+                    <div className='nav-header'>
+                        <Link to='/'>
+                            <img src={logo} alt='logo' className='nav-image'/>
+                        </Link>
+                        <button 
+                            type='button' 
+                            className='nav-btn'
+                            onClick={this.handleToggle}
+                        >
+                            <FaAlignRight className='nav-icon'/>
+                        </button>
+                    </div>
+                    <ul className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}>
+                        <li>
+                            <Link to='/menu'>Menu</Link>
+                        </li>
+                        <li>
+                        <Link to='/cart'>
+                            <i class="fas fa-cart-arrow-down fa-lg" />
+                        </Link>
+                        </li>
+                    </ul>
+                </div>
 
-                {/* <ul className='navbar-nav align-items-center'>
-                    <li className='nav-item ml-5'/>
-                    <Link to='/cart' className='nav-link'>
-                        Cart
-                    </Link>
-                </ul> */}
 
-                <Link to='/cart' className='ml-auto'>
-                    <i class="fas fa-cart-arrow-down fa-lg" style={{color:'var(--mainWhite'}}/>
-                </Link>
             </nav>
         )
     }
