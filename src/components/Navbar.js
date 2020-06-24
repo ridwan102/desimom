@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../logo.svg';
+import logo from '../images/logo.svg';
 
 export default class Navbar extends Component {
+    //navbar toggle; adjust .nav-links in CSS (43:06 of video Resort React Tutorial)
+    // state={
+    //     isOpen:false
+    // }
+    // handleToggle = () =>{
+    //     this.setState({isOpen:!this.state.isOpen})
+    // }
     render() {
         return (
-            <nav className='navbar navbar-expand-sm bg-primary navbar-dark px-sm-5' style={{color:'var(--mainYellow'}}>
+            <nav className='navbar'>
                 {/* 
                 https://www.iconfinder.com/icons/1243689/call_phone_icon
                 Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
-                <Link to='/' className='navbar-brand'>
-                    <img src={logo} alt='logo' className='navbar-brand'/>
-                    {/* <i class="fas fa-home fa-lg"></i> */}
+                <Link to='/'>
+                    <img src={logo} alt='logo' className='nav-brand'/>
                 </Link>
 
                 {/* <ul className='navbar-nav align-items-center'>

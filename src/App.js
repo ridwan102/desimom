@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Switch, Route} from 'react-router-dom';
-import logo from './logo.svg';
+import logo from './images/logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
@@ -9,7 +9,7 @@ import Intro from "./components/Intro";
 import Menu from './components/Menu';
 import Description from './components/Description';
 import Cart from './components/Cart';
-import Default from './components/Default';
+import Error from './components/Error';
 
 class App extends Component{
   render() {
@@ -22,7 +22,7 @@ class App extends Component{
           <Route path="/menu" component={Menu}/>
           <Route path="/description" component={Description}/>
           <Route path="/cart" component={Cart}/>
-          <Route component={Default}/>
+          <Route component={Error}/>
         </Switch>
       </React.Fragment>
     );
