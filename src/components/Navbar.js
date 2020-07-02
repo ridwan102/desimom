@@ -37,7 +37,7 @@ export default class Navbar extends Component {
                         </li>
                         <li>
                         <Link to='/cart'>
-                            <i class="fas fa-cart-arrow-down fa-lg" />
+                            <i className="fas fa-cart-arrow-down fa-lg" />
                         </Link>
                         </li>
                     </ul>
