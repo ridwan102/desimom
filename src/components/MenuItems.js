@@ -2,7 +2,7 @@ import React from 'react'
 import defaultImg from '../images/samosa.jpeg'
 
 export default function MenuItems({menuItem}) {
-    const{title, price, image, description} = menuItem;
+    const{title, price, image} = menuItem;
     return (
         <article className='menu'>
             <div className='img-container'>
