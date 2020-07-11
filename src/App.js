@@ -8,6 +8,7 @@ import Intro from "./components/Intro";
 import Menu from './components/Menu';
 import Cart from './components/Cart';
 import Error from './components/Error';
+import Footer from './components/Footer';
 
 
 //https://www.youtube.com/watch?v=LXJOvkVYQqA 1:22
@@ -24,6 +25,7 @@ class App extends Component{
           <Route path="/cart" component={Cart}/>
           <Route component={Error}/>
         </Switch>
+        <Footer/>
       </React.Fragment>
     );
   }

@@ -4,7 +4,7 @@ export default class End extends Component {
     //navbar toggle; adjust .nav-links in CSS (43:06 of video Resort React Tutorial)
     render() {
         return (
-            <nav className='navbar'>
+            <footer className='navbar'>
                 {/* 
                 https://www.iconfinder.com/icons/1243689/call_phone_icon
                 Creative Commons (Attribution 3.0 Unported);
@@ -32,7 +32,7 @@ export default class End extends Component {
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </footer>
         )
     }
 }
