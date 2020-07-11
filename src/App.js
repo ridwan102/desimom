@@ -25,7 +25,7 @@ class App extends Component{
           <Route path="/cart" component={Cart}/>
           <Route component={Error}/>
         </Switch>
-        <Footer/>
+        {/* <Footer/> */}
       </React.Fragment>
     );
   }
