@@ -34,17 +34,12 @@ export default class Navbar extends Component {
                         <li>
                             <Link to='/menu'>Menu</Link>
                         </li>
-                        <li>
+                        <li className='order-btn'>
                         <a href='https://docs.google.com/forms/d/e/1FAIpQLSfThLvU7L_MlS4eRNIzJ7Q7y71f2bOrJRkzkcW_mtm0FADXmg/viewform' 
-                        target="_blank" rel="noopener noreferrer">
-                            {/* <i className="fas fa-cart-arrow-down fa-lg" /> */}
-                            Order
-                        </a>
+                        target="_blank" rel="noopener noreferrer"> Order </a>
                         </li>
                     </ul>
                 </div>
-
-
             </nav>
         )
     }

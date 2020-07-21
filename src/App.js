@@ -3,12 +3,12 @@ import {Switch, Route} from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
-import Home from "./components/Home";
-import Intro from "./components/Intro";
+import Home from './components/Home';
+import Intro from './components/Intro';
 import Menu from './components/Menu';
 import Cart from './components/Cart';
 import Error from './components/Error';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 
 //https://www.youtube.com/watch?v=LXJOvkVYQqA 1:22
@@ -25,7 +25,7 @@ class App extends Component{
           <Route path="/cart" component={Cart}/>
           <Route component={Error}/>
         </Switch>
-        {/* <Footer/> */}
+        <Footer/>
       </React.Fragment>
     );
   }

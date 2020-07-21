@@ -140,22 +140,40 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
 }
+
+.order-btn{
+  border-radius: 12px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .nav-icon {
   font-size: 1.5rem;
   color: var(--primaryColor);
 }
+
 .nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
 }
+
 .nav-links a {
   display: block;
   text-decoration: none;
@@ -195,6 +213,68 @@ h6 {
 }
 
 /* end of navbar */
+
+/* Footer */
+
+.footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: var(--mainYellow);
+  z-index: 1;
+}
+
+.foot-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+.foot-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+}
+.foot-links a:hover {
+  color: var(--primaryColor);
+}
+
+.show-foot {
+  height: 100px;
+}
+
+.foot-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+
+  .foot-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .foot-links {
+    height: auto;
+    display: flex;
+    margin-left: 4rem;
+  }
+  .foot-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* end of footer */
 
 /* Home */
 .Home{
@@ -290,9 +370,9 @@ h6 {
   width: 90vw;
   margin-top: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 50px;
+  grid-column-gap: 40px;
 }
 .intro span {
   display: inline-block;
@@ -300,6 +380,7 @@ h6 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
+
 /* .services h6 {
   letter-spacing: var(--mainSpacing);
 } */
