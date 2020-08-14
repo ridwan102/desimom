@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Intro from './components/Intro';
 import Menu from './components/Menu';
+import MenuItems from './components/MenuItems';
 import Cart from './components/Cart';
 import Error from './components/Error';
 import Footer from './components/Footer';
@@ -21,6 +22,7 @@ class App extends Component{
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/intro" component={Intro}/>
+          <Route path="/menuitems" component={MenuItems}/>
           <Route path="/menu" component={Menu}/>
           <Route path="/cart" component={Cart}/>
           <Route component={Error}/>
