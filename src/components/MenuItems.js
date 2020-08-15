@@ -10,9 +10,8 @@ export default function MenuItems({menuItem}) {
                 <div className='price-top'>
                     <h6>${price}</h6>
                 </div>
-                <h4>{title}</h4>
-                <div className='description'>
-                </div>
+                <h5>{title}</h5>
+                <div className='description'/>
             </div>
         </article>
     )
